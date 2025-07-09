@@ -18,10 +18,10 @@
 
 ```bash
 # 全局安装
-npm install -g @mly/gitlab-mcp-server
+npm install -g @liyuan.meng/gitlab-mcp-server
 
 # 或者使用 npx（无需安装）
-npx @mly/gitlab-mcp-server --help
+npx @liyuan.meng/gitlab-mcp-server --help
 ```
 
 ### 方式二：本地开发构建
@@ -55,7 +55,7 @@ npm run build
     "gitlab": {
       "command": "npx",
       "args": [
-        "@mly/gitlab-mcp-server",
+        "@liyuan.meng/gitlab-mcp-server",
         "--gitlab-url", "https://gitlab.your-domain.com/group/project",
         "--access-token", "glpat-your-token-here"
       ]
