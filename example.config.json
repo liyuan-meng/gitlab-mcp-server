@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gitlab": {
+      "command": "node",
+      "args": ["build/index.js"],
+      "cwd": "/path/to/your/gitlab-mcp-server",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+} 

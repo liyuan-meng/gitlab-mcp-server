@@ -1,0 +1,60 @@
+{
+  "name": "gitlab-mcp-server",
+  "version": "1.0.2",
+  "description": "GitLab MCP Server for reading project documentation with configurable defaults and optional parameters",
+  "main": "build/index.js",
+  "bin": {
+    "gitlab-mcp-server": "build/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch & node --watch build/index.js",
+    "test": "node test/test.js",
+    "debug": "node test/debug-test.js",
+    "prestart": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "build/**/*",
+    "README.md",
+    "USAGE.md",
+    "PROJECT_SUMMARY.md",
+    "example.config.json"
+  ],
+  "keywords": [
+    "mcp", 
+    "gitlab", 
+    "documentation", 
+    "markdown", 
+    "configurable", 
+    "cursor",
+    "model-context-protocol",
+    "ai",
+    "assistant"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/gitlab-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/gitlab-mcp-server/issues"
+  },
+  "homepage": "https://github.com/your-username/gitlab-mcp-server#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "marked": "^12.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
