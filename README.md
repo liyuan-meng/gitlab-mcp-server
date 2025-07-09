@@ -14,7 +14,17 @@
 
 ## 🚀 快速开始
 
-### 1. 安装和构建
+### 方式一：通过 npm 安装（推荐）
+
+```bash
+# 全局安装
+npm install -g @mly/gitlab-mcp-server
+
+# 或者使用 npx（无需安装）
+npx @mly/gitlab-mcp-server --help
+```
+
+### 方式二：本地开发构建
 
 ```bash
 # 克隆项目
@@ -28,16 +38,33 @@ npm install
 npm run build
 ```
 
-### 2. 获取 GitLab 访问令牌
+### 1. 获取 GitLab 访问令牌
 
 1. 登录你的 GitLab 实例
 2. 转到 **Settings** → **Access Tokens**
 3. 创建新令牌，权限选择：`read_api` 和 `read_repository`
 4. 复制生成的令牌（格式：`glpat-xxxxxxxxxxxxxxxxxxxx`）
 
-### 3. 配置 Cursor
+### 2. 配置 Cursor
 
-**推荐：预配置默认值**
+**推荐：使用 npx（npm 安装后）**
+
+```json
+{
+  "mcpServers": {
+    "gitlab": {
+      "command": "npx",
+      "args": [
+        "@mly/gitlab-mcp-server",
+        "--gitlab-url", "https://gitlab.your-domain.com/group/project",
+        "--access-token", "glpat-your-token-here"
+      ]
+    }
+  }
+}
+```
+
+**或者：本地构建方式**
 
 ```json
 {
@@ -54,7 +81,7 @@ npm run build
 }
 ```
 
-### 4. 开始使用
+### 3. 开始使用
 
 ```bash
 # 获取项目信息

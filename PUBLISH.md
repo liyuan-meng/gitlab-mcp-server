@@ -62,10 +62,10 @@ npm publish --access public
 
 ```bash
 # 检查包是否发布成功
-npm view gitlab-mcp-server
+npm view @mly/gitlab-mcp-server
 
 # 查看包信息
-npm info gitlab-mcp-server
+npm info @mly/gitlab-mcp-server
 ```
 
 ## 🎯 通过 npx 使用
@@ -105,10 +105,10 @@ npx gitlab-mcp-server --help
 
 ```bash
 # 全局安装
-npm install -g gitlab-mcp-server
+npm install -g @mly/gitlab-mcp-server
 
 # 本地安装
-npm install gitlab-mcp-server
+npm install @mly/gitlab-mcp-server
 
 # 使用本地安装的版本
 npx gitlab-mcp-server
@@ -209,20 +209,20 @@ npm publish --access public
 npm access list packages
 
 # 添加维护者
-npm owner add <username> gitlab-mcp-server
+npm owner add <username> @mly/gitlab-mcp-server
 ```
 
 ### 2. 版本管理
 
 ```bash
 # 查看所有版本
-npm view gitlab-mcp-server versions --json
+npm view @mly/gitlab-mcp-server versions --json
 
 # 废弃某个版本
-npm deprecate gitlab-mcp-server@1.0.0 "This version has security issues"
+npm deprecate @mly/gitlab-mcp-server@1.0.0 "This version has security issues"
 
 # 删除版本（24小时内）
-npm unpublish gitlab-mcp-server@1.0.0
+npm unpublish @mly/gitlab-mcp-server@1.0.0
 ```
 
 ## 📊 发布检查清单
@@ -257,7 +257,7 @@ npm cache clean --force
 
 ```bash
 # 检查包名是否可用
-npm view gitlab-mcp-server
+npm view @mly/gitlab-mcp-server
 
 # 如果冲突，考虑使用 scoped package
 npm init --scope=@your-username
@@ -270,7 +270,7 @@ npm init --scope=@your-username
 npm access list packages
 
 # 更新权限
-npm access grant read-write @your-team:developers gitlab-mcp-server
+npm access grant read-write @your-team:developers @mly/gitlab-mcp-server
 ```
 
 ## 📚 相关资源
