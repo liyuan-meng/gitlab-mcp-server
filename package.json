@@ -38,12 +38,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/gitlab-mcp-server.git"
+    "url": "git+https://github.com/liyuan-meng/gitlab-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/gitlab-mcp-server/issues"
+    "url": "https://github.com/liyuan-meng/gitlab-mcp-server/issues"
   },
-  "homepage": "https://github.com/your-username/gitlab-mcp-server#readme",
+  "homepage": "https://github.com/liyuan-meng/gitlab-mcp-server#readme",
   "engines": {
     "node": ">=18.0.0"
   },
