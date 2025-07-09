@@ -9,7 +9,7 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const serverPath = join(__dirname, 'build', 'index.js');
+const serverPath = join(__dirname, '..', 'build', 'index.js');
 
 console.log('启动 GitLab MCP 服务端测试...');
 console.log('服务端路径:', serverPath);

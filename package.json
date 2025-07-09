@@ -11,8 +11,8 @@
     "build": "tsc",
     "start": "node build/index.js",
     "dev": "tsc --watch & node --watch build/index.js",
-    "test": "node test/test.js",
-    "debug": "node test/debug-test.js",
+    "test": "node ./test/test.js",
+    "debug": "node ./test/debug-test.js",
     "prestart": "npm run build",
     "prepublishOnly": "npm run build"
   },
