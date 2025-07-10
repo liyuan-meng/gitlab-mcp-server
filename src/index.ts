@@ -284,8 +284,13 @@ class GitLabMCPServer {
           type: 'blob'
         }));
         
+        // 如果搜索API成功但没有找到.md文件，抛出错误以进入fallback方案
+        if (mdFiles.length === 0) {
+          throw new Error('搜索API未找到.md文件，使用文件树API作为备选方案');
+        }
+        
       } catch (searchError) {
-        console.error('搜索API失败，尝试文件树API:', searchError);
+        console.error('搜索API失败或未找到文件，尝试文件树API:', searchError);
         
         // 方法2：使用文件树 API（递归）
         const filesResponse = await axios.get(
