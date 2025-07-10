@@ -45,7 +45,7 @@ class GitLabMCPServer {
     this.server = new Server(
       {
         name: 'gitlab-mcp-server',
-        version: '1.0.2',
+        version: '1.0.4',
       }
     );
 
@@ -404,7 +404,7 @@ class GitLabMCPServer {
   async run() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error('GitLab MCP Server v1.0.2-configurable 已启动');
+    console.error('GitLab MCP Server v1.0.4-configurable 已启动');
     if (this.defaultGitlabUrl) {
       console.error(`默认GitLab URL: ${this.defaultGitlabUrl}`);
     }

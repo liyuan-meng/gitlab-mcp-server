@@ -1,6 +1,6 @@
 {
   "name": "@liyuan.meng/gitlab-mcp-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "GitLab MCP Server for reading project documentation with configurable defaults and optional parameters",
   "main": "build/index.js",
   "bin": {
